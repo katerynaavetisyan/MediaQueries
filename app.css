@@ -6,15 +6,44 @@ h1 {
     font-size: 6em;
     text-align: center;
 }
+
 nav {
     font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
 }
 
-ul,li {
+ul {
+    border: 1px solid red;
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul,
+li {
     display: inline;
     margin: 0;
     padding: 0;
 }
 
+@media (min-width:768px) {
+    h1 {
+        color: rgb(43, 226, 195);
+        font-size: 2em;
+    }
 
+    nav,
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
+@media (min-width:500px) {
+    h1 {
+        color: blueviolet;
+        font-size: 2em;
+    }
+}
